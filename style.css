@@ -1,0 +1,324 @@
+/* .jumbotron {
+
+  height: 200px; 
+} */
+.masonry { 
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 800px;
+  margin-left: -8px; /* Adjustment for the gutter */
+}
+
+.masonry-brick {
+  margin: 0 8px 8px 0; /* Some gutter */
+} 
+
+.btn {
+  background-color: rgb(49, 62, 75);
+  border: none;
+  color: white;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.parent{
+    width: 120%;;
+    height:150px;
+    border:3px solid rgba(10, 41, 66, 0.425);
+    position: relative;
+    
+}
+.relative{
+   border:3px solid rgba(10, 41, 66, 0.425);
+   width:120%;
+   height: 450px;
+   position: relative;
+   bottom: 1px;
+}
+
+.relative2{
+    border:3px solid rgba(6, 19, 31, 0.425);
+    width:750px;
+    height: 380px;
+    position: relative;
+    bottom: 1px;
+ }
+
+ .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  border: none;
+  color: white;
+
+}
+
+.button1 {
+  background-color: rgba(111, 133, 151, 0.543);
+  color: whitesmoke;
+  font-family: 'Gill Sans';
+  font-size: 14px;
+  border: 2px solid rgba(111, 133, 151, 0.543);
+  
+}
+
+.button1:hover {
+  background-color: whitesmoke; 
+  color: rgba(111, 133, 151, 0.543); 
+  font-family: 'Gill Sans';
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid whitesmoke;
+}
+
+body {
+  padding-top: 56px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the Sticky icons on web page */   
+.stickyicon-list {   
+  position: fixed;   
+  top: 200px;   
+  transform: translateY(-50%);             
+  }         
+  .stickyicon-list a {   
+  display: block;   
+  text-align: center;   
+  padding: 8px;   
+  transition: all 0.5s ease;   
+  color: white;   
+  font-size: 20px;   
+  }         
+  /* HOver affect on sticky social media icons    */
+  /* .stickyicon-list a:hover {   
+  color: #000;   
+  width:10px;   
+  }    */
+     
+  /* Now we have to design each icon of social media */         
+  /* .facebook {   
+  background: #3b5998;   
+  color: white;  
+  }         
+  .twitter {   
+  color: white;   
+  background: #00acee;   
+  }   
+  .linkedin {   
+  background: #0e76a8;   
+  color: white;   
+  }         
+  .google {   
+  color: white;   
+  background: #db4a39;   
+  }   
+  .instagram {   
+  background: #3f729b;   
+  color: white;   
+  }         
+  .youtube {   
+  color: white;   
+  background: #c4302b;    
+  }    */
+
+  .nested {
+    display: contents;
+  }
+  .cards {
+    /* border: 1px solid rgb(178, 189, 189); */
+    background-color: #fff;
+    display: contents;
+  }
+
+  ul li { 
+    margin: 5px;
+  }
+
+  .tooltip-inner{
+    padding:1px 1px;
+    color:#f9fcfc;
+    text-align:left;
+    font-family: 'Gill Sans';
+    font-size: 12pt;
+    font-weight:lighter;
+    background: rgb(53, 56, 58) ;
+    max-width: 350px;
+    width:350px;
+}
+.tooltip.show {
+  opacity: 1;
+  
+}
+
+/* html {
+  font-family: Gill Sans;
+}
+
+form {
+  width: 500px;
+}
+
+div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+label {
+  flex: 2;
+  line-height: 2;
+  text-align: right;
+  padding-right: 20px;
+}
+
+input, textarea {
+  flex: 7;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+textarea {
+  height: 60px;
+} */
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-auto-rows: 200px;
+  background-color: whitesmoke;
+}
+
+.photo {
+  grid-row-end: span 2;
+}
+.project {
+  grid-row-end: span 3;
+}
+.oct {
+  grid-row-end: span 1;
+}
+
+/* Non-grid specific CSS */  
+body {
+ margin: 10px;
+ /* color: #374046; */
+ /* background-color: #374046; */
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 1.15em;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+}
+
+.item {
+ /* background-color: #ffffff; */
+ background: whitesmoke"
+}
+
+.photothumb{
+ width: 100%;
+}
+
+.title {
+ padding: 5px;
+}
+
+.title h3{
+  font-family:'Gill Sans' ; 
+  color:white ; 
+  background: rgb(126, 133, 133);
+  font-size: 14pt;
+  text-align: center;
+  font-weight: bold;
+ /* color: #ffffff; */
+ /* text-transform: uppercase; */
+}
+
+.project .title{
+ background-color: #607D8B;
+}
+
+.blog .title{
+ background-color: rgb(126, 133, 133);
+}
+
+.photo .title{
+ background-color: #f44336;
+}
+
+.desc{
+ padding: 10px 10px 5px 10px;
+}
+
+.desc img{
+ width: 50%;
+ margin: 0 10px 10px 0;
+ float: left;
+}
+
+.desc p{
+ margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .circle {
+    list-style-type: circle;
+  }

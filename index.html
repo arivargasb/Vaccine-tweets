@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta charset="UTF-8">
+    <title>Vaccine Twitter data analysis</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body style="background-image: url('images/background.png');
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;"> -->
+
+<!-- navigation var -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a style="color: rgb(93, 95, 95); font-weight: bolder ; font-size: 14px; font-family: 'Gill Sans';  " class="navbar-brand" href="https://hsc.unm.edu/echo/institute-programs/covid-19-response/nm-covid19/infectious-disease/">UNM HSCI Program Website</a> -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation"> -->
+            <!-- <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
+            
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> -->
+                    <!-- <a class="nav-link" href="index.html" style="font-family: 'Gill Sans'">Home         -->
+                         <!-- <span class="sr-only">(current)</span> -->
+                    <!-- </a> 
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav> -->
+<!-- <br>
+<br> -->
+
+<!-- navigation var -->
+
+
+
+
+<div  class="jumbotron bg-dark text-center">
+    <!-- <div class="row"> -->
+        <!-- <div class="col-md-3">
+            <img class="img-fluid" src="images/project_echo_transparent.jpeg" alt="Project ECHO">
+        </div>
+       <div class="col-md-9"> -->
+           <h3 style="font-size: 30px; color:rgb(255, 255, 255);font-weight: bold;font-family: 'Gill Sans'">Vaccine Twitter data analysis</h3>
+           <hr class="my-4">
+           <h5 style="font-family: 'Gill Sans'; color:rgb(252, 252, 252);font-weight: bold;" >Trends in the topics of US vaccine-related tweets</h5>
+           <h5 style="font-family: 'Gill Sans'; color:rgb(252, 252, 252);font-weight: bold;" >1/1/2020 - 4/18/2021 </h5>
+       <!-- </div> -->
+
+   <!-- </div> -->
+</div>
+<div id="intro">
+<div class="container"   style="border: 1px solid rgb(107, 116, 124); background-color:white">
+    <br>
+    <p style=" font-size: 16px; font-weight: lighter; font-family: 'Gill Sans';  color:rgb(0, 0, 0)">
+        This website shows the trends in the topics discussed on Twitter around the COVID-19 vaccination.
+        The tweets considered include the word vaccine or some of its variations (e.g. vaccination, vaccinate,
+        vaccines, etc.) and were posted by users located across the US territory.
+    </p>
+                   <!-- <br> -->
+</div>
+</div>
+
+<br>
+
+<div id="topics" >
+
+    <div class="container"   style=" background-color: rgba(111, 133, 151, 0.543)">
+        <p style=" font-size: 27px;  font-family: 'Gill Sans';text-align: center; font-weight: bolder; color:white">&nbsp&nbspTopics</p>
+    </div>
+    <br>
+
+    <div class="row">
+
+
+        <!-- 1. Distribution of topics -->
+
+        <div class="col-md-8">
+            <p style=" font-size: 16px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:black; text-align: center">Distribution of topics</p>
+            <embed type="text/html" src="charts/twitterVaccine_topics_012021-042021.html" width="580" height="520" > 
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>                
+                <!-- <div class="container"   style=" background-color: rgba(111, 133, 151, 0.543)"> -->
+                <p style=" font-size: 14px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; font-style: italic; color:black">Select a topic:</p>
+                <ol type='A'>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a href="#eager" style="color:black">Vaccinated or eager to vaccinate</a></li>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<p>&nbsp No subtopics.&nbspTopic composition:</p><ul class='circle'><li>Common mild side-effects</li><li>Fever and body ache</li><li>Second dose effects</li><li>No side-effects</li><li>Relief of long-haul COVID symptoms</li></ul>">Making an appointment</a></li>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a href="#politics" style="color:black">Politics & vaccination</a></li>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a href="#concerns" style="color:black">Concerns: risks vs benefits</a></li>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<p>&nbsp No subtopics.&nbspTopic composition:</p><ul class='circle'><li>Community vaccination sites trying to improve access for people of color</li><li>Lack of access from minorities</li><li>Racial disparities in vaccination rates</li><li>Info events discussing inequity and the J&J single-shot vax as a solution</li></ul>">Inequality of access</a></li>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<p>&nbsp No subtopics.&nbspTopic composition:</p><ul class='circle'><li>The virus is fake as well as the vax</li><li>People with family believing in conspiracy theories</li></ul>">Conspiracy theories</a></li>
+                <li style=" font-size: 13px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<p>&nbsp No subtopics.&nbspTopic composition:</p><ul class='circle'><li>Natural herd immunity is better than vaccines </li></ul>">Trust in natural immunity</a></li>
+                </ol>
+                <!-- </div> -->
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>    
+<br>
+<br>
+<br>    
+
+
+<!-- 2. Vaccinated / eager to vaccinate -->
+
+<div id="eager" >
+    <br>    
+<br>
+<br>
+<!-- <br>     -->
+    <div class="container"   style=" background-color: rgba(111, 133, 151, 0.543)">
+        <p style=" font-size: 20px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:white">&nbsp&nbspA. Vaccinated or eager to vaccinate</p>
+    </div>
+    <br>    
+    <br> 
+    <!-- <br>  -->
+    <!-- <br> 
+    <br>  -->
+
+    <div class="row">
+
+
+        <div class="col-md-8">
+            <p style=" font-size: 16px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:black; text-align: center">Distribution of subtopics</p>
+            <embed type="text/html" src="charts/twitterVaccine_eagerness_012021-042021.html" width="580" height="520" > 
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>                
+                <ol>
+                <p style=" font-size: 12px;  font-family: 'Gill Sans';text-align: left; font-weight: bold; font-style: italic; color:black">Hover over each subtopic to see their composition:</p>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Common mild side-effects</li><li>Fever and body ache</li><li>Second dose effects</li><li>No side-effects</li><li>Relief of long-haul COVID symptoms</li></ul>">Common side-effects</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Studies testing the effectiveness</li><li>Results from real-world studies</li><li>Vaccines help immune system fight COVID</li></ul>">Vaccine effectiveness</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Keep practicing social distance</li><li>Keep washing hands</li><li>Continue wearing mask</li></ul>">Keep taking care</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Vax reduces COVID severity and long-term damage</li><li>Vax needed for stopping hospitalization & deaths</li><li>Risk of dying from COVID vs from the vax</li><li>Benefits outweight risks</li><li>Risk of clots is lower compared to birth control pills</li></ul>">Vax benefits / putting risks in perspective</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Govnt getting shots on people's arms</li><li>Number of doses administered</li><li>Elderly familiy members getting vaccinated</li><li>Seeing the light at the end of the tunnel</li><li>Appointments available and increase in vax production</li></ul>">Vax rollout success</a></li>
+                </ol>
+        </div>
+    </div>
+    <p &nbsp><a href="#intro" class="button button1" >&nbspBack to all topics&nbsp</a></p>
+</div>
+<br>
+<br>
+<br>    
+<br>
+<br>
+<br>    
+
+<!-- 2. Politics and vaccination -->
+
+<div id="politics" >
+    <br>
+<br>
+<br>    
+    <div class="container"   style=" background-color: rgba(111, 133, 151, 0.543)">
+        <p style=" font-size: 20px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:white">&nbsp&nbspPolitics and vaccination</p>
+    </div>
+    <br>    
+    <br> 
+    <!-- <br>  -->
+    <!-- <br> 
+    <br>  -->
+
+    <div class="row">
+
+
+        <div class="col-md-8">
+            <p style=" font-size: 16px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:black; text-align: center">Distribution of subtopics</p>
+            <embed type="text/html" src="charts/twitterVaccine_politics_012021-042021.html" width="580" height="520" > 
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>                
+                <ol>
+                <p style=" font-size: 12px;  font-family: 'Gill Sans';text-align: left; font-weight: bold; font-style: italic; color:black">Hover over each subtopic to see their composition:</p>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Confusion generated by Fauci/CDC</li><li>Mask mandates</li><li>Govnt distrust</li><li>CDC recommending wearing mask after vaccinating</li></ul>">Critiques against policies</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Vax rollout goals</li><li>Local govnts' vax rollout plans</li></ul>">Rollout strategy</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Governor Desantis against passports</li><li>Vax passports might be required for certain activities</li></ul>">Implementing vaccination passports</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Vax record required for attending school in person</li><li>Rollout to school staff</li><li>Discussion on prioritizing vaccinating teachers</li></ul>">School reopening</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Trump didn't have a vaccination plan</li><li>Whether Trump or Biden are doing a better job</li><li>Biden not giving credit to Trump for Operation Warp Speed</li><li>Trump urging supporters to vaccinate</li><li>Hesitancy among white Republicans</li><li>Trump voters refure to wear mask</li></ul>">Mentions of Trump</a></li>
+                </ol>
+        </div>
+    </div>
+    <p &nbsp><a href="#intro" class="button button1" >&nbspBack to all topics&nbsp</a></p>
+</div>
+<br>
+<br>
+<br>    
+<br>
+<br>
+<br>    
+<!-- 3. risks -->
+
+<div id="concerns" >
+    <br>
+<br>
+<br>    
+    <div class="container"   style=" background-color: rgba(111, 133, 151, 0.543)">
+        <p style=" font-size: 20px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:white">&nbsp&nbspConcerns: risks vs benefits</p>
+    </div>
+    <br>    
+    <br> 
+    <!-- <br>  -->
+    <!-- <br> 
+    <br>  -->
+
+    <div class="row">
+
+
+        <div class="col-md-8">
+            <p style=" font-size: 16px;  font-family: 'Gill Sans';text-align: left; font-weight: bolder; color:black; text-align: center">Distribution of subtopics</p>
+            <embed type="text/html" src="charts/twitterVaccine_concerns_012021-042021.html" width="580" height="520" > 
+            </div>
+
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>                
+                <ol>
+                <p style=" font-size: 12px;  font-family: 'Gill Sans';text-align: left; font-weight: bold; font-style: italic; color:black">Hover over each subtopic to see their composition:</p>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Concerns about deaths related to J&J after pausing its rollout</li><li>AZ blood clotting cases and European countries suspending implementation</li><li>Govnt report on J&J blood clotting cases and CDC/FDA recommending pausing its rollout</li><li>More women are dying from blood clots</li></ul>">Blood clotting risk</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Vax is not fully approved by the FDA</li><li>Vax is an experimental gene therapy</li><li>Long term effects are unknown</li></ul>">Experimental vax and long term effects</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Effectiveness against variants is unknown</li><li>Need to get a yearly booster shot</li></ul>">Uncertainty of its effectiveness</a></li>
+                <li style=" font-size: 14px;  font-family: 'Gill Sans'; color:black"><a data-toggle="tooltip" data-placement='right' twipsy-content-set="true"  data-html="true"  data-original-title= "<ul class='circle'><li>Death cases</li><li>Risk of dying from COVID vs risk of dying from the vax</li><li>Risks of vaccinating children</li></ul>">Severe immediate effects</a></li>    
+                </ol>
+        </div>
+    </div>
+    <p &nbsp><a href="#intro" class="button button1" >&nbspBack to all topics&nbsp</a></p>
+</div>
+<br>
+<br>
+<br>    
+<br>
+<br>
+<br>    
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
